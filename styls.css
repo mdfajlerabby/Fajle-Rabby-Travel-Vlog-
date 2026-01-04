@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url("images/TravelsBanner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* --- Top Menu --- */
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: rgba(109, 109, 109, 0.3); /* 30% transparent white */
+    position: absolute; /* overlay on hero image */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+.menu {
+    flex: 0 0 70%; /* 70% width */
+    text-align: right;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;          /* important for background hover */
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(0, 119, 182, 0.8); /* blue hover bg */
+    color: #ffffff;                           /* text stays white */
+}
+
+
+
+
+
+.hero-content h1{
+    background: rgba(173, 216, 230, 0.6); /* Light blue, semi-transparent like watercolor */
+    padding: 15px 20px;
+    border-radius: 20px; /* Rounded corners */
+    color: rgb(0, 0, 0); /* Text color */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 50%;
+    margin-left: 170px;
+    margin-top: 80px;
+}
+.hero-content p{
+    background: rgba(173, 216, 230, 0.6); /* Light blue, semi-transparent like watercolor */
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    color: rgb(0, 0, 0); /* Text color */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #0077b6; /* Darker blue for button */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.hero-btn:hover {
+    background-color: #0096c7;
+}
+
+/* About Me Section */
+
+.about-section {
+    padding: 60px 50px;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Common card style */
+.about-card {
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Left card */
+.profile-card {
+    width: 35%;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Right card */
+.details-card {
+    width: 65%;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 0px 50px;
+}
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Whole card clickable */
+.gallery-item {
+    text-decoration: none;
+    color: #000;
+    border-radius: 15px;
+    overflow: hidden; /* important for rounded image */
+    background-color: #f5f5f5;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+/* Image with 19:6 ratio */
+.gallery-item img {
+    width: 100%;
+    aspect-ratio: 19 / 12;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text below image */
+.gallery-text {
+    padding: 10px;
+}
+
+.gallery-text h4 {
+    margin: 0;
+}
+
+.gallery-text p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Travel Blogs Section*/
+.blog-section {
+    padding: 60px 50px;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Blog list container */
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Single blog post */
+.blog-post {
+    display: flex;
+    gap: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Image part */
+.blog-image {
+    width: 30%;
+    height: 30px;
+}
+
+.blog-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* square image */
+    object-fit: cover;
+}
+
+/* Content part */
+.blog-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.blog-content h3 {
+    margin-top: 0;
+}
+
+.blog-content a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+
+/* Contact Section */
+.contact-section {
+    margin-top: -60px;
+    padding: 50px 50px;
+    text-align: center;!important
+}
+
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+.contact-card form {
+    margin-top: 15px;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.contact-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    background-color: #0096c7;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0b2c3d;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
